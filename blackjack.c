@@ -71,11 +71,11 @@ int main() {
     }
 
     if (checkWinner(p1Score, p2Score) == 0) {
-        printf("There's a tie! removing score by number of turns played.\n");
+        printf("Same score removing score by number of turns played.\n");
         p1Score -= calcPointsRemoval(p1TurnsPlayed);
         p2Score -= calcPointsRemoval(p2TurnsPlayed);
         if (checkWinner(p1Score, p2Score) == 0) {
-            printf("There's another tie! WOW!\n");
+            printf("Same score again!\n");
         }
     }
 
